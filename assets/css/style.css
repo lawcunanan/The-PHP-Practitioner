@@ -1,0 +1,102 @@
+:root {
+	--bg: #f6f8fb;
+	--card: #ffffff;
+	--muted: #6b7280;
+	--accent: #2563eb;
+	--radius: 10px;
+}
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: Inter, system-ui, Segoe UI, Roboto, Arial;
+	background: var(--bg);
+	color: #111;
+	margin: 0;
+}
+.container {
+	max-width: 900px;
+	margin: 24px auto;
+	padding: 24px;
+}
+.site-header {
+	background: linear-gradient(90deg, #fff 0%, #f8fbff 100%);
+	border-bottom: 1px solid #e6eefc;
+}
+.site-header .container {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 20px;
+}
+.brand {
+	margin: 0;
+	font-size: 1.6rem;
+	color: var(--accent);
+}
+.tagline {
+	margin: 6px 0 0;
+	color: var(--muted);
+}
+main.container {
+	background: transparent;
+	padding-top: 18px;
+}
+.card {
+	background: var(--card);
+	border-radius: var(--radius);
+	padding: 20px;
+	box-shadow: 0 6px 18px rgba(16, 24, 40, 0.06);
+}
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+label {
+	font-size: 0.9rem;
+	color: var(--muted);
+}
+input[type="text"],
+input[type="password"] {
+	padding: 10px;
+	border-radius: 8px;
+	border: 1px solid #e6eefc;
+	background: #fff;
+}
+button,
+input[type="submit"] {
+	background: var(--accent);
+	color: #fff;
+	border: none;
+	padding: 10px 14px;
+	border-radius: 8px;
+	cursor: pointer;
+}
+a {
+	color: var(--accent);
+	text-decoration: none;
+}
+.small {
+	font-size: 0.9rem;
+	color: var(--muted);
+}
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+th,
+td {
+	padding: 10px;
+	border-bottom: 1px solid #f1f5f9;
+}
+th {
+	background: #fbfdff;
+	text-align: left;
+	color: var(--muted);
+}
+.site-footer {
+	padding: 18px 0;
+	text-align: center;
+	color: var(--muted);
+}
