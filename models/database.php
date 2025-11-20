@@ -3,6 +3,7 @@
 class Database
 {
     private static $pdo;
+
     public static function getConnection($config)
     {
         self::$pdo = null;
